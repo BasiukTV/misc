@@ -1,0 +1,21 @@
+# systemd configuration template for a service which always restarts, regardless of
+# wether its execution was succesful, failed or was terminated
+#
+# 1. Copy this file to /etc/systemd/system
+# 2. Rename the copy into {service_name}.service 
+# 3. Update Description and ExecStart fields
+# 3.a See "man systemd.service" for additional fields details
+# 4 For service launch after next reboot run: "sudo systemctl enable {service_name}" 
+# 4.a To also launch service right-away run: "sudo systemctl start {service_name}"
+# 4.b See "man systemctl" for additional service bootstrap details
+# 5 Check for service status with "systemctl status {service_name}"
+
+[Unit]
+Description=Service which does something
+
+[Service]
+ExecStart=/usr/bin/python3 /home/ubuntu/misc/service_emulator.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
