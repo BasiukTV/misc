@@ -9,6 +9,7 @@
 # 4.a To also launch service right-away run: "sudo systemctl start {service_name}"
 # 4.b See "man systemctl" for additional service bootstrap details
 # 5 Check for service status with "systemctl status {service_name}"
+# 6 Examine service output with "journalctl _SYSTEMD_UNIT={service_name}.service"
 
 [Unit]
 Description=Service which does something
