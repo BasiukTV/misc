@@ -20,5 +20,5 @@ $ python cache_cl_sim.py 10 1 1 1 1 1 1 1 1 1 1 `
 ```
 
 ## Result Examples
-[[https://github.com/BasiukTV/misc/sim/cache/example/example1.png|alt=octocat]]
-[[https://github.com/BasiukTV/misc/sim/cache/example/example2.png|alt=octocat]]
+![alt text](example/example1.png)
+![alt text](example/example2.png)
